@@ -1,0 +1,19 @@
+# Terraform
+.terraform/
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Keep the lock file (commit this)
+!**/.terraform.lock.hcl
+
+# Local/secret vars (don't commit real secrets)
+*.tfvars
+*.auto.tfvars
+*.auto.tfvars.json
+
+# OS/editor junk
+.DS_Store
+.kube/
